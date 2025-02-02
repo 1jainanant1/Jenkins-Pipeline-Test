@@ -1,11 +1,11 @@
 pipeline
 {
 agent any
-Stages
+stages
 {
-Stage("Print Hi Message")
+stage("Print Hi Message")
 {
-Step(sh 'echo JOB For Hi')
+steps{sh 'echo JOB-For-Hi'}
 }
 }
 }
