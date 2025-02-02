@@ -3,9 +3,15 @@ pipeline
 agent any
 stages
 {
-stage("Print Hi Message")
+stage('Print Hi Message')
 {
 steps{sh 'echo JOB-For-Hi'}
+}
+{
+stage('Second HI Message')
+{
+steps{sh 'echo Message-HI-second'}
+}
 }
 }
 }
