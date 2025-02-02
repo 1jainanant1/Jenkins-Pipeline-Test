@@ -1,0 +1,11 @@
+pipeline
+{
+agent any
+Stages
+{
+Stage("Print Hi Message")
+{
+Step(sh 'echo JOB For Hi')
+}
+}
+}
